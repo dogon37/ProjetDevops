@@ -1,2 +1,5 @@
 #!/bin/bash
-sudo rm -r /web
+if [[ -d /web ]]
+then
+    sudo rm -r /web
+fi
