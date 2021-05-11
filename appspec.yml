@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /web/
+    destination: /home/ec2-user/flask/
 hooks:
   BeforeInstall:
     - location: scripts/cleanup.sh

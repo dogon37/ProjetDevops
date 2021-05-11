@@ -1,6 +1,7 @@
 #!/bin/bash
+easy_install pip
 pip install virtualenv
-python3 -m venv test_venv
-. test_venv/bin/activate
-pip install --upgrade pip
-pip install -r /web/requirements.txt
+cd /home/ec2-user/flask/
+virtualenv venv
+. venv/bin/activate
+pip install -r requirements.txt
