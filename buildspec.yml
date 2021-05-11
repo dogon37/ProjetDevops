@@ -10,7 +10,7 @@ phases:
       - . test_venv/bin/activate
       - pip install --upgrade pip
       - pip install -r requirements.txt
-build:
+  build:
     commands:
       - pytest
       - docker start sonarqube
