@@ -21,7 +21,7 @@ artifacts:
       - 'tests/*'
       - '__init__.py'
       - 'app.py'
-      - 'appscpec.py'
+      - 'appscpec.yml'
       - 'LICENSE'
       - 'README.md'
       - 'requirements.txt'
