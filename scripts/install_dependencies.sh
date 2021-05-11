@@ -1,6 +1,6 @@
 #!/bin/bash
 easy_install pip
-pip install virtualenv
+pip3 install virtualenv
 cd /home/ec2-user/flask_pytest_example/
 virtualenv venv
 . venv/bin/activate
