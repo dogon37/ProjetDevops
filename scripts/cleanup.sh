@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[ -d /web ]]
+if [[ -d /home/ec2-user/flask ]]
 then
-    sudo rm -r /web
+    sudo rm -r /home/ec2-user/flask
 fi
