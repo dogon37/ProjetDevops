@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+  pre_build:
+    commands:
+      - python -m venv test_venv
+      - . test_venv/bin/activate
+      - pip install --upgrade pip
+      - pip install -r requirements.txt
+build:
+    commands:
+      - pytest 
+artifacts:
+    type: zip
+    files:
+      - 'handlers/*'
+      - 'scripts/*'
+      - 'tests/*'
+      - '__init__.py'
+      - 'app.py'
+      - 'appscpec.py'
+      - 'LICENSE'
+      - 'README.md'
+      - 'requirements.txt'
+     
