@@ -12,7 +12,8 @@ phases:
       - pip install -r requirements.txt
 build:
     commands:
-      - pytest 
+      - pytest
+      - docker start sonarqube
 artifacts:
     type: zip
     files:
