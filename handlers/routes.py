@@ -6,7 +6,7 @@ def configure_routes(app):
 
     @app.route('/')
     def hello_world():
-        return 'Hello, World! nouvelle version'
+        return 'Hello, World!'
 
     @app.route('/post/test', methods=['POST'])
     def receive_post():
